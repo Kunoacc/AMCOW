@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js"
+        integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+
+<body class="font-body overflow-x-hidden">
+    <nav
+        class="container flex items-center justify-between flex-wrap bg-transparent p-8 absolute top-0 left-0 right-0 w-screen z-10">
+        <div class="flex items-center flex-shrink-0 text-white mr-8">
+            <img src="/img/logo.png" width="100">
+        </div>
+        <div class="w-full block flex-grow hidden lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow-0 text-white ml-auto">
+                <a href="" class="block lg:inline-block mt-3 lg:mt-0 mx-5"> Home </a>
+                <a href="" class="block lg:inline-block mt-3 lg:mt-0 mx-5"> Events </a>
+                <a href="" class="block lg:inline-block mt-3 lg:mt-0 mx-5"> News </a>
+                <a href="" class="block lg:inline-block mt-3 lg:mt-0 mx-5"> Sign In </a>
+                <a href="" class="block lg:inline-block mt-3 lg:mt-0 mx-5 bg-purple-700 text-white rounded px-4 py-2">
+                    Sign Up </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="w-screen max-w-full relative" id="hero" style="background-color: rgba(0, 0, 0, 0.6);">
+            <img src="/img/sample.jpg" class="absolute h-full w-full z-0 object-cover" alt="" style="z-index: -1;">
+            <div class="z-10 pt-32 container justify-center items-center flex flex-col relative mx-auto text-white">
+                <h1 class="font-display text-5xl">Find Exciting</h1>
+                <h1 class="font-display text-5xl">Information <span class="hero__underline">Globally</span></h1>
+                <div
+                    class="hero__seach mt-5 bg-white rounded py-3 pl-5 pr-3 w-3/4 lg:w-1/2 flex items-center align-middle">
+                    <i class="fas fa-search text-gray-500"></i>
+                    <input type="text" class="focus:outline-none pl-4 flex-grow" placeholder="Enter Keyword">
+                    <button class="rounded text-white bg-purple-700 py-2 px-3 ml-auto">Search</button>
+                </div>
+            </div>
+            <div class="z-10 w-full lg:w-2/3 flex justify-around lg:justify-between mx-auto py-24 flex-row flex-wrap px-10 lg:px-0">
+                <div class="px-3 py-2 rounded-lg text-center w-1/2 lg:w-1/6 mt-4 lg:mt-0" style="background-color: rgba(255, 255, 255, 0.7);">
+                    <h2 class="text-purple-700 text-3xl font-bold">72</h2>
+                    <p>Guest Articles</p>
+                </div>
+                <div class="px-3 py-2 rounded-lg text-center w-1/2 lg:w-1/6 mt-4 lg:mt-0" style="background-color: rgba(255, 255, 255, 0.7);">
+                    <h2 class="text-purple-700 text-3xl font-bold">46</h2>
+                    <p>Policy Briefs</p>
+                </div>
+                <div class="px-3 py-2 rounded-lg text-center w-1/2 lg:w-1/6 mt-4 lg:mt-0" style="background-color: rgba(255, 255, 255, 0.7);">
+                    <h2 class="text-purple-700 text-3xl font-bold">8</h2>
+                    <p>Generation 2030</p>
+                </div>
+                <div class="px-3 py-2 rounded-lg text-center w-1/2 lg:w-1/6 mt-4 lg:mt-0" style="background-color: rgba(255, 255, 255, 0.7);">
+                    <h2 class="text-purple-700 text-3xl font-bold">1336</h2>
+                    <p>News</p>
+                </div>
+                <div class="px-3 py-2 rounded-lg text-center w-1/2 lg:w-1/6 mt-4 lg:mt-0" style="background-color: rgba(255, 255, 255, 0.7);">
+                    <h2 class="text-purple-700 text-3xl font-bold">264</h2>
+                    <p>Events</p>
+                </div>
+            </div>
+        </section>
+        <section class="bg-white container p-8" id="featured">
+            <div class="flex justify-between">
+                <h2 class="section__header">featured</h2>
+                <a href="#" class="text-purple-700">See More</a>
+            </div>
+            <div class="featured__news flex flex-col lg:flex-row items-center py-8 border-gray-300 border-b lg:border-none">
+                <img src="/img/sample.jpg" class="featured__news-image w-full lg:w-1/2 pr-8 h-full" alt="" srcset="">
+                <div class="w-full lg:w-1/2 lg:pl-8">
+                    <h4 class="text-lg font-bold my-2">Monitoring Improving Sanitation</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloremque veniam dolore eum nihil repellat, blanditiis reprehenderit voluptate accusantium voluptatibus qui, sit fuga eaque labore aliquid quia et mollitia eligendi.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil earum dolores non blanditiis a hic mollitia optio ut! Eveniet culpa quis dignissimos voluptatibus itaque officiis ducimus dolore atque, corrupti provident.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab reiciendis ratione quod facilis, adipisci quos voluptate vel velit nobis commodi dolorem tempore suscipit quam consequuntur. Praesentium labore voluptatibus nulla corporis?
+                    </p>
+                </div>
+            </div>
+            <div class="featured__news flex flex-col lg:flex-row items-center py-8 border-gray-300 border-b lg:border-none">
+                <img src="/img/sample.jpg" class="featured__news-image w-full lg:w-1/2 pr-8 h-full" alt="" srcset="">
+                <div class="w-full lg:w-1/2 lg:pl-8">
+                    <h4 class="text-lg font-bold my-2">Monitoring Improving Sanitation</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloremque veniam dolore eum nihil repellat, blanditiis reprehenderit voluptate accusantium voluptatibus qui, sit fuga eaque labore aliquid quia et mollitia eligendi.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil earum dolores non blanditiis a hic mollitia optio ut! Eveniet culpa quis dignissimos voluptatibus itaque officiis ducimus dolore atque, corrupti provident.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab reiciendis ratione quod facilis, adipisci quos voluptate vel velit nobis commodi dolorem tempore suscipit quam consequuntur. Praesentium labore voluptatibus nulla corporis?
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="container px-8 bg-white">
+            <hr>
+        </div>
+        <section class="bg-white container p-8" id="guest_articles">
+            <div class="flex justify-between">
+                <h2 class="section__header">guest articles</h2>
+                <a href="#" class="text-purple-700">See More</a>
+            </div>
+            <div class="featured__news flex flex-col lg:flex-row items-center py-8 border-gray-300 border-b lg:border-none">
+                <img src="/img/sample.jpg" class="featured__news-image w-full lg:w-1/2 pr-8 h-full" alt="" srcset="">
+                <div class="w-full lg:w-1/2 lg:pl-8">
+                    <h4 class="text-lg font-bold my-2">Monitoring Improving Sanitation</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloremque veniam dolore eum nihil repellat, blanditiis reprehenderit voluptate accusantium voluptatibus qui, sit fuga eaque labore aliquid quia et mollitia eligendi.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil earum dolores non blanditiis a hic mollitia optio ut! Eveniet culpa quis dignissimos voluptatibus itaque officiis ducimus dolore atque, corrupti provident.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab reiciendis ratione quod facilis, adipisci quos voluptate vel velit nobis commodi dolorem tempore suscipit quam consequuntur. Praesentium labore voluptatibus nulla corporis?
+                    </p>
+                </div>
+            </div>
+            <div class="featured__news flex flex-col lg:flex-row items-center py-8 border-gray-300 border-b lg:border-none">
+                <img src="/img/sample.jpg" class="featured__news-image w-full lg:w-1/2 pr-8 h-full" alt="" srcset="">
+                <div class="w-full lg:w-1/2 lg:pl-8">
+                    <h4 class="text-lg font-bold my-2">Monitoring Improving Sanitation</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloremque veniam dolore eum nihil repellat, blanditiis reprehenderit voluptate accusantium voluptatibus qui, sit fuga eaque labore aliquid quia et mollitia eligendi.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil earum dolores non blanditiis a hic mollitia optio ut! Eveniet culpa quis dignissimos voluptatibus itaque officiis ducimus dolore atque, corrupti provident.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab reiciendis ratione quod facilis, adipisci quos voluptate vel velit nobis commodi dolorem tempore suscipit quam consequuntur. Praesentium labore voluptatibus nulla corporis?
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="container px-8 bg-white">
+            <hr>
+        </div>
+        <section class="bg-white p-8 container" id="news">
+            <div class="flex justify-between">
+                <h2 class="section__header">news</h2>
+                <a href="#" class="text-purple-700">See More</a>
+            </div>
+            <div class="flex flex-col lg:flex-row">
+                <div class="flex-row lg:flex-col w-full lg:w-1/2 lg:pr-2">
+                    <div class="relative">
+                        <img src="/img/sample.jpg" class="" alt="" srcset="">
+                        <div class="absolute top-0 left-0 h-full w-full" style="background-color: rgba(0, 0, 0, 0.5);">
+                            <p
+                            class="absolute left-0 py-3 px-3 rounded-l-none rounded bg-white font-bold tag">
+                                where can i get some?
+                            </p>
+                            <p class="absolute bottom-0 pb-5 text-center text-white mx-auto w-full">
+                                12th December, 2019 | John Doe, Knowledge Hub
+                            </p>
+                        </div>
+                    </div>
+                    <div class="relative mt-4">
+                        <img src="/img/sample.jpg" class="" alt="" srcset="">
+                        <div class="absolute top-0 left-0 h-full w-full" style="background-color: rgba(69, 15, 218, 0.644);">
+                            <p
+                            class="absolute left-0 py-3 px-3 rounded-l-none rounded bg-white font-bold tag">
+                                where can i get some?
+                            </p>
+                            <p class="absolute bottom-0 pb-5 text-center text-white mx-auto w-full">
+                                12th December, 2019 | John Doe, Knowledge Hub
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" my-4 lg:my-0 w-full lg:w-1/2 lg:pl-2 flex relative">
+                    <img src="/img/sample.jpg" class="object-cover" alt="" srcset="">
+                    <div class="absolute lg:top-0 lg:left-0 h-full w-full flex lg:block justify-center items-center" style="background-color: rgba(218, 181, 15, 0.644);">
+                        <p
+                            class="relative lg:absolute right-0 py-3 px-3 rounded-r-none rounded bg-white font-bold tag w-2/3">
+                            The standard Lorem Ipsum passage, used
+                            since the 1500s
+                            <br>
+                            <span class="text-sm font-light">12th December, 2019 | John Doe, Knowledge Hub</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="policy_briefs"></section>
+        <section id="events" class="w-full events-bg">
+            <div class="container p-8">
+                <div class="flex justify-between">
+                    <h2 class="event__header">events</h2>
+                    <a href="#" class="text-white">See More</a>
+                </div>
+                <div class="events py-10 flex-row flex flex-wrap justify-around lg:justify-between">
+                    <div class="rounded border border-white px-4 py-6 mt-6">
+                        <p class="capitalize font-bold py-2">
+                            All Africa Water Conference
+                        </p>
+                        <p>12th December, 2019</p>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+                    <div class="rounded border border-white px-4 py-6 mt-6">
+                        <p class="capitalize font-bold py-2">
+                            All Africa Water Conference
+                        </p>
+                        <p>12th December, 2019</p>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+                    <div class="rounded border border-white px-4 py-6 mt-6">
+                        <p class="capitalize font-bold py-2">
+                            All Africa Water Conference
+                        </p>
+                        <p>12th December, 2019</p>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+                    <div class="rounded border border-white px-4 py-6 mt-6">
+                        <p class="capitalize font-bold py-2">
+                            All Africa Water Conference
+                        </p>
+                        <p>12th December, 2019</p>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+                    <div class="rounded border border-white px-4 py-6 mt-6">
+                        <p class="capitalize font-bold py-2">
+                            All Africa Water Conference
+                        </p>
+                        <p>12th December, 2019</p>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+                    <div class="rounded border border-white px-4 py-6 mt-6">
+                        <p class="capitalize font-bold py-2">
+                            All Africa Water Conference
+                        </p>
+                        <p>12th December, 2019</p>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+                    <div class="rounded border border-white px-4 py-6 mt-6">
+                        <p class="capitalize font-bold py-2">
+                            All Africa Water Conference
+                        </p>
+                        <p>12th December, 2019</p>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+                    <div class="rounded border border-white px-4 py-6 mt-6">
+                        <p class="capitalize font-bold py-2">
+                            All Africa Water Conference
+                        </p>
+                        <p>12th December, 2019</p>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+                    <div class="rounded border border-white px-4 py-6 mt-6">
+                        <p class="capitalize font-bold py-2">
+                            All Africa Water Conference
+                        </p>
+                        <p>12th December, 2019</p>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+                    <div class="rounded border border-white px-4 py-6 mt-6">
+                        <p class="capitalize font-bold py-2">
+                            All Africa Water Conference
+                        </p>
+                        <p>12th December, 2019</p>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+                    <div class="rounded border border-white px-4 py-6 mt-6">
+                        <p class="capitalize font-bold py-2">
+                            All Africa Water Conference
+                        </p>
+                        <p>12th December, 2019</p>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+                    <div class="rounded border border-white px-4 py-6 mt-6">
+                        <p class="capitalize font-bold py-2">
+                            All Africa Water Conference
+                        </p>
+                        <p>12th December, 2019</p>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+                    <div class="rounded border border-white px-4 py-6 mt-6">
+                        <p class="capitalize font-bold py-2">
+                            All Africa Water Conference
+                        </p>
+                        <p>12th December, 2019</p>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+                    <div class="rounded border border-white px-4 py-6 mt-6">
+                        <p class="capitalize font-bold py-2">
+                            All Africa Water Conference
+                        </p>
+                        <p>12th December, 2019</p>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+                    <div class="rounded border border-white px-4 py-6 mt-6">
+                        <p class="capitalize font-bold py-2">
+                            All Africa Water Conference
+                        </p>
+                        <p>12th December, 2019</p>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+                    <div class="rounded border border-white px-4 py-6 mt-6">
+                        <p class="capitalize font-bold py-2">
+                            All Africa Water Conference
+                        </p>
+                        <p>12th December, 2019</p>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="bg-purple-100 py-32" id="newsletter">
+            <div class="justify-center items-center mx-auto flex flex-col relative">
+                <p>Enter your email address to receive the latest update</p>
+                <div
+                    class="hero__seach mt-5 bg-white rounded py-3 pl-5 pr-3 w-3/4 lg:w-1/2 flex items-center align-middle">
+                    <i class="fas fa-envelope text-gray-500"></i>
+                    <input type="text" class="focus:outline-none pl-4 flex-grow" placeholder="Enter your email">
+                    <button class="rounded text-white bg-purple-700 py-2 px-3 ml-auto">Subscribe</button>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-gray-800 p-8 text-white">
+            <div class="container flex flex-col lg:flex-row justify-between">
+                <div class="flex w-full lg:w-1/4 px-3 flex-col">
+                    <h4 class="footer__header">
+                        About Us
+                    </h4>
+                    <p class="my-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae dolores dolor ut sunt ab iure, expedita est natus quaerat odio provident earum itaque aperiam debitis sit voluptates dolorum placeat.
+                    </p>
+                    <h4 class="footer__header">
+                        Social Media
+                    </h4>
+                    <div class="justify-between flex my-4">
+                        <i class="fab fa-instagram text-2xl"></i>
+                        <i class="fab fa-twitter-square text-2xl"></i>
+                        <i class="fab fa-facebook-square text-2xl"></i>
+                        <i class="fab fa-youtube-square text-2xl"></i>
+                    </div>
+                </div>
+                <div class="flex w-full lg:w-1/4 px-3 flex-col">
+                    <h4 class="footer__header">
+                        popular posts
+                    </h4>
+                    <div class="flex flex-col my-4">
+                        <div class="flex flex-col">
+                            <h5 class="text-base font-semibold capitalize py-2 text-green-500">Nature</h5>
+                            <p class="text-sm font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                        </div>
+                        <div class="flex flex-col">
+                            <h5 class="text-base font-semibold capitalize py-2 text-yellow-400">Nature</h5>
+                            <p class="text-sm font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                        </div>
+                        <div class="flex flex-col">
+                            <h5 class="text-base font-semibold capitalize py-2 text-pink-500">Nature</h5>
+                            <p class="text-sm font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                        </div>
+                        <div class="flex flex-col">
+                            <h5 class="text-base font-semibold capitalize py-2 text-gray-600">Nature</h5>
+                            <p class="text-sm font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex w-full lg:w-1/4 px-3 flex-col">
+                    <h4 class="footer__header">
+                        twitter feed
+                    </h4>
+                    <div class="footer__feed flex-col my-4">
+                        <div class="flex my-4 items-center flex-row">
+                            <div class="h-12 w-12 rounded-full bg-gray-400 mr-2"></div>
+                            <p class="text-sm font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p class="mx-2">
+                        </div>
+                        <div class="flex my-4 items-center flex-row">
+                            <div class="h-12 w-12 rounded-full bg-gray-400 mr-2"></div>
+                            <p class="text-sm font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                        </div>
+                        <div class="flex my-4 items-center flex-row">
+                            <div class="h-12 w-12 rounded-full bg-gray-400 mr-2"></div>
+                            <p class="text-sm font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                        </div>
+                        <div class="flex my-4 items-center flex-row">
+                            <div class="h-12 w-12 rounded-full bg-gray-400 mr-2"></div>
+                            <p class="text-sm font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="flex w-full lg:w-1/4 px-3 flex-col">
+                    <h4 class="footer__header">
+                        categories
+                    </h4>
+                    <div class="flex flex-col my-4">
+                        <a href="#" class="flex-row flex justify-between py-2 my-2 border-b border-gray-600">
+                            <p>Nature</p>
+                            <p>13</p>
+                        </a>
+                        <a href="#" class="flex-row flex justify-between py-2 my-2 border-b border-gray-600">
+                            <p>Nature</p>
+                            <p>13</p>
+                        </a>
+                        <a href="#" class="flex-row flex justify-between py-2 my-2 border-b border-gray-600">
+                            <p>Nature</p>
+                            <p>13</p>
+                        </a>
+                        <a href="#" class="flex-row flex justify-between py-2 my-2 border-b border-gray-600">
+                            <p>Nature</p>
+                            <p>13</p>
+                        </a>
+                        <a href="#" class="flex-row flex justify-between py-2 my-2 border-b border-gray-600">
+                            <p>Nature</p>
+                            <p>13</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+
+</html>

@@ -11419,6 +11419,22 @@ video {
   background-repeat: no-repeat;
   background-position: left 120% top -120px;
   background-size: contain;
+  position: relative;
+}
+
+.hero__underline{
+  position: relative;
+}
+
+.hero__underline::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60%;
+  bottom: 0;
+  background-color: #553c9a;
+  z-index: -1;
 }
 
 .section__header{
@@ -11459,8 +11475,8 @@ video {
 .footer__feed > div{
   border-bottom-width: 1px;
   border-color: #a0aec0;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .event__header::before{
